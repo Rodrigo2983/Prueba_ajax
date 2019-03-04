@@ -1,0 +1,16 @@
+<h1>Hola mundo</h1>
+
+<%= render 'form' %>
+
+
+<div class="row">
+<div id='caja' class='col col-ml-8'>
+<% @companys.each do |c| %>
+<li>
+    <%= c.name %>
+    <%= lint_to '', root_path %>
+    <% end %>
+    
+</li>
+</div>
+</div>
